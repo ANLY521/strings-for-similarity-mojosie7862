@@ -25,12 +25,26 @@ Edit Dist | (fill me) | -0.175| (fill me)
 
 **TODO:**
 Show usage of the homework script with command line flags (see example under lab, week 1).
+`python sts_pearson.py --sts_data stsbenchmark/sts-dev.csv`
 
+`python sts_pearson.py --sts_data stsbenchmark/sts-test.csv`
+
+`python sts_pearson.py --sts_data stsbenchmark/sts-train.csv`
+
+**NIST** - uses arithmetic mean of n-gram overlap and weights each n-gram overlap proportional to its frequency in the string
+
+**BLEU** - uses up to n-gram 4 to calculate n-gram overlap using geometric mean, uniformly weighting each n-gram overlap to calculate the score
+
+**WER** - minimum edit distance calculated form the sentence alignment, divided by the total number of words in the sentence
+
+**LCS** - the longest string between the two sequences which is an exact match
+
+**EDIST** - edit distance calculated form the sentence alignment, it is the aggregated cost of insertions, deletions, and substitutions that should occur for the sequence to be equal.
 
 ## lab, week 1: sts_nist.py
 
 Calculates NIST machine translation metric for sentence pairs in an STS dataset.
-
+ 
 Example usage:
 
 `python sts_nist.py --sts_data stsbenchmark/sts-dev.csv`
