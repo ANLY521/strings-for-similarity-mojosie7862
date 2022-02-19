@@ -17,11 +17,11 @@ varies slightly due to preprocessing/system difference, but the difference shoul
 
 Metric | Train | Dev | Test 
 ------ | ----- | --- | ----
-NIST | (fill me) | 0.593 | (fill me)
-BLEU | (fill me) | 0.433 | (fill me)
-WER | (fill me) | -0.452| (fill me)
-LCS | (fill me) | 0.468| (fill me)
-Edit Dist | (fill me) | -0.175| (fill me)
+NIST | 0.4961 | 0.593 | 0.4745
+BLEU |  0.3711 | 0.433 | 0.3534
+WER | -0.3530 | -0.452| -0.3581
+LCS | 0.3600 | 0.468| 0.3465
+Edit Dist | -0.0186 | -0.175| -0.0958
 
 **TODO:**
 Show usage of the homework script with command line flags (see example under lab, week 1).
